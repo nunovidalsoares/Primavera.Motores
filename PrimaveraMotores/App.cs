@@ -52,14 +52,13 @@ namespace PrimaveraMotor
             
             try
             {
-                Console.Write("A abrir Empresa...");
+                Console.Write("A abrir Plataforma...");
                 PSO.AbrePlataformaEmpresa(pCompany, objStdTransac, objAplConf, pTipoPlataforma);
-                
                 Console.WriteLine("Done");
 
                 if (PSO.Inicializada)
                 {
-                    Console.Write("A abrir Plataforma...");
+                    Console.Write("A abrir Empresa...");
                     BSO.AbreEmpresaTrabalho(pTipoPlataforma, pCompany, objAplConf.Utilizador, objAplConf.PwdUtilizador, objStdTransac, pInstance);
                     Console.WriteLine("Done");
 
